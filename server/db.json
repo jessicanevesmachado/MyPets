@@ -1,0 +1,68 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Lhasa Apso",
+      "breed": "Lhasa",
+      "description": "Lhasa apso é uma raça de cães de companhia, de pequeno porte, vinda do Tibete na Cordilheira do Himalaia.",
+      "image": "https://www.infoescola.com/wp-content/uploads/2010/10/Lhasa-apso_243387829.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Poodle",
+      "breed": "poodle",
+      "description": "Poodle, de acordo com a Federação Cinológica Internacional é oriunda da França, por ter sido reivindicada, porém ela já era há muito tempo criada em países da Europa Central como a Alemanha",
+      "image": "https://www.petz.com.br/cachorro/racas/poodle/img/poodle-caracteristicas-guia-racas.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Yorkshire Terrier",
+      "breed": "yorkshire",
+      "description": "Yorkshire terrier, também chamada york e yorkie, é uma raça canina de pequeno porte do grupo dos terriers, originária do condado de Yorkshire na Inglaterra",
+      "image": "https://i0.statig.com.br/bancodeimagens/9u/30/mu/9u30mujbn2cge222mk4v7ofwh.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Dálmata",
+      "breed": "dalmata",
+      "description": "Dálmata é uma raça canina antiga, oriunda do Leste Europeu, da região da Dalmácia, e reconhecida por sua característica pelagem manchada. ",
+      "image": "https://www.petlove.com.br/images/breeds/193070/profile/original/dalmata-p.jpg?1532538995"
+    },
+    {
+      "id": 5,
+      "name": "Maltês",
+      "breed": "Maltês",
+      "description": "Maltês também chamado de bichon maltês, é uma raça de cães de companhia de pequeno porte oriunda da região central do Mar Mediterrâneo, geralmente associada pelo nome a ilha de Malta.",
+      "image": "https://www.azpetshop.com.br/blog/wp-content/uploads/2020/08/Emily_Maltese-805x452.jpg"
+    },
+
+    {
+      "id": 6,
+      "name": "Beagle",
+      "breed": "beagle",
+      "description": "Beagle ou bigle é uma raça de cães de caça de pequeno a médio porte originária do Reino Unido. De acordo com a Federação Cinológica Internacional, seu padrão é o número 161, a raça está inserida no grupo 6, pertencente a seção 1.",
+      "image": "https://cobasi.vteximg.com.br/arquivos/ids/639566/beagle-3877115_1920.png"
+    },
+    {
+      "id": 7,
+      "name": "Buldogue francês",
+      "breed": "Buldogue",
+      "description": "O buldogue francês é uma raça de cão de companhia, do tipo buldogue, de pequeno porte, oriunda da França.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OREmuMZrgIXMzBGPvVJNdn1-tSjPyr6ENQ&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "name": "Buldogue inglês",
+      "breed": "Buldogue inglês",
+      "description": "O buldogue-inglês é uma raça de cães do tipo buldogue oriunda da Inglaterra. Descende de cães utilizados para combater touros em um desporto sangrento chamado bull-baiting",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVeHtMcpc1xqO9d1GdnWxTYjzH1IIZoGZY8cjdmPNlSmPvS_eG3MEYhHVeeMi_WLiYRxM&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "name": "Pug",
+      "breed": "Pug",
+      "description": "Pug é uma raça de cão de companhia de pequeno porte, com focinho achatado e cauda enrolada. São cães braquicefálicos, ou seja, têm o focinho achatado",
+      "image": "https://s2.glbimg.com/YNb74ks3a6VTaMtfslAxCIJbFtI=/0x0:640x360/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/i/V/nVfRYsT1CwyuQJGudlhw/pug-bbc-2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "usequery",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server:json": "json-server --watch ./server/db.json --port 3333 --delay 3000"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
+    "axios": "^0.21.4",
+    "json-server": "^0.16.3",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-query": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}

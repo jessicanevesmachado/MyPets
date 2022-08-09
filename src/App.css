@@ -1,0 +1,26 @@
+#root {
+  width: 100%;
+}
+
+.App {
+  padding: 50px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  clear: both;
+}
+
+.actionButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
