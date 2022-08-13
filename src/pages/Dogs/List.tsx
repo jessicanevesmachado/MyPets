@@ -1,9 +1,10 @@
-import { Alert, Box, Button, CircularProgress } from "@mui/material";
+import { Alert, Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getDogs } from "../../api/dogs";
-import { TOTAL_PER_PAGE } from "../../constants";
 import { IDog, IDogPaginantion } from "../../types/IDog";
-import { Dog, RenderPaginantionDog } from "./Dog";
+import { Dog } from "./Dog";
+
+import { Paginantion, PaginantionButton } from "./Pagination";
 
 export const List = () => {
   const [dogs, setDogs] = useState<IDogPaginantion>();
@@ -46,10 +47,7 @@ export const List = () => {
     <div>
       <h1 className="title">Lista de Dogs</h1>
 
-      <RenderPaginantionDog
-        currentPage={currentPage}
-        totalItens={dogs.totalItens}
-      />
+      <Paginantion currentPage={currentPage} totalItens={dogs.totalItens} />
 
       <div className="flex">
         {dogs.data.map((dog: IDog) => (
@@ -64,26 +62,16 @@ export const List = () => {
         ))}
       </div>
 
-      <div className="actionButton">
-        <Button
-          onClick={() => {
-            setCurrentPage(currentPage - 1);
-          }}
-          disabled={!dogs.hasPrevious}
-          variant="text"
-        >
-          Anterior
-        </Button>
-        <Button
-          onClick={() => {
-            setCurrentPage(currentPage + 1);
-          }}
-          disabled={!dogs.hasNext}
-          variant="text"
-        >
-          Próximo
-        </Button>
-      </div>
+      <PaginantionButton
+        hasNext={dogs.hasNext}
+        hasPrevious={dogs.hasPrevious}
+        onNextPage={() => {
+          setCurrentPage(currentPage + 1);
+        }}
+        onPreviousPage={() => {
+          setCurrentPage(currentPage - 1);
+        }}
+      />
     </div>
   );
 };

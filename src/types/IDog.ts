@@ -12,7 +12,14 @@ export interface IDogPaginantion {
   totalItens: number;
 }
 
-export interface RenderDogPaginantion {
+export interface IPaginantion {
   currentPage: number;
   totalItens: number;
+}
+
+export interface IPaginantionButton {
+  hasNext: boolean;
+  hasPrevious: boolean;
+  onNextPage: () => void;
+  onPreviousPage: () => void;
 }
