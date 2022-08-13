@@ -9,7 +9,7 @@ import { Paginantion, PaginantionButton } from "./Pagination";
 export const List = () => {
   const [dogs, setDogs] = useState<IDogPaginantion>();
   const [isLoading, setLoading] = useState<boolean>(false);
-  const [isError, setError] = useState<any>();
+  const [isError, setError] = useState<string>();
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   useEffect(() => {
