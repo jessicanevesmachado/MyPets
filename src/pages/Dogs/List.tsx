@@ -6,6 +6,13 @@ import { Dog } from "./Dog";
 
 import { Paginantion, PaginantionButton } from "./Pagination";
 
+export const Loading = () => (
+  <div className="loading">
+    <CircularProgress />
+    <Box sx={{ paddingLeft: "10px" }}>Buscando meus Pets ...</Box>
+  </div>
+);
+
 export const List = () => {
   const [dogs, setDogs] = useState<IDogPaginantion>();
   const [isLoading, setLoading] = useState<boolean>(false);
@@ -35,17 +42,12 @@ export const List = () => {
   }
 
   if (isLoading || !dogs?.data) {
-    return (
-      <div className="loading">
-        <CircularProgress />
-        <Box sx={{ paddingLeft: "10px" }}>Buscando a lista de Dogs ...</Box>
-      </div>
-    );
+    return <Loading />;
   }
 
   return (
     <div>
-      <h1 className="title">Lista de Dogs</h1>
+      <h1 className="title">Meus Pets 🐶</h1>
 
       <Paginantion currentPage={currentPage} totalItens={dogs.totalItens} />
 
