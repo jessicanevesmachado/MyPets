@@ -5,6 +5,7 @@ import { IDog, IDogPaginantion } from "../../types/IDog";
 import { Dog } from "./Dog";
 
 import { Paginantion, PaginantionButton } from "./Pagination";
+import { useQuery } from "react-query";
 
 export const Loading = () => (
   <div className="loading">
@@ -14,12 +15,12 @@ export const Loading = () => (
 );
 
 export const List = () => {
-  const [dogs, setDogs] = useState<IDogPaginantion>();
-  const [isLoading, setLoading] = useState<boolean>(false);
-  const [isError, setError] = useState<string>();
+  //const [dogs, setDogs] = useState<IDogPaginantion>();
+  //const [isLoading, setLoading] = useState<boolean>(false);
+  //const [isError, setError] = useState<string>();
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  useEffect(() => {
+  {/*useEffect(() => {
     setLoading(true);
     getDogs(currentPage)
       .then((dogs) => {
@@ -31,7 +32,9 @@ export const List = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, [currentPage]);
+  }, [currentPage]); */}
+
+  const {isError, isLoading, data:dogs} = useQuery<IDogPaginantion>(["dogs", {page:currentPage}],()=>getDogs(currentPage))
 
   if (isError) {
     return (
