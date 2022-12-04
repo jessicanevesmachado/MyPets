@@ -28,7 +28,7 @@ npm run server:json
 ### 4) Execute a aplicação:
 
 ```
-npm run de
+npm run dev
 ```
 
 
