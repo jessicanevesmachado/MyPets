@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server:json": "json-server --watch ./server/db.json --port 3333 --delay 2000"
+    "server:json": "json-server --watch ./server/db.json --port 3333 --delay 2000 "
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
