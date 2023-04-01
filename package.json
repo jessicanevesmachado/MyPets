@@ -17,7 +17,7 @@
     "json-server": "^0.16.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-query": "^3.22.0"
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
