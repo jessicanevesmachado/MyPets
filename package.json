@@ -12,7 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@mui/material": "^5.10.0",
+    "@mui/material": "^5.12.3",
     "axios": "^0.21.4",
     "json-server": "^0.16.3",
     "react": "^17.0.0",
