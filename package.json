@@ -10,7 +10,7 @@
     "server:json": "json-server --watch ./server/db.json --port 3333 --delay 2000 "
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
+    "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.0",
     "axios": "^0.21.4",
